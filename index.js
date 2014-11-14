@@ -68,6 +68,7 @@ Swipe.prototype.bind = function () {
  */
 
 Swipe.prototype.unbind = function () {
+  var el = this.el;
   el.removeEventListener('mousedown', this.onstart);
   el.removeEventListener('mousemove', this.onmove);
   el.removeEventListener('touchstart', this.onstart);
